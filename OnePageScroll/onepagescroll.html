@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>One Page Scroll</title>
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.jsLinks to an external site."></script>-->
+</head>
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+    html {
+            scroll-behavior: smooth;
+        }
+    body {
+        background-color: indianred;
+    }
+    wrapper {
+        width: 1180px;
+        height: 4500px;
+        background-color: olive;
+        position: relative;
+        margin: 0 auto;
+        color: black;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    nav {
+        width: 1160px;
+        height: 100px;
+        background-color: lightsteelblue;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #section-01, #section-03, #section-05 {
+        width: 1160px;
+        height: 800px;
+        background-color: olive;
+        margin: 0 auto;
+    }
+
+    #section-02, #section-04 {
+        width: 1160px;
+        height: 800px;
+        background-color: khaki;
+        margin: 0 auto;
+    }
+
+    p#nav-section-01,p#nav-section-02,p#nav-section-03,p#nav-section-04,p#nav-section-05 {
+    display: inline;
+    font-size: 24px;
+    font-family: "Courier New", arial, serif;
+    font-weight: bold;
+    padding: 0 25px;
+        padding-top: 25px;
+    }
+
+    a:Link {
+        text-decoration: none;
+        color: lime;
+    }
+    a:visited {
+        text-decoration: none;
+        color: hotpink;
+    }
+    a:hover {
+        text-decoration: none;
+        color: indigo;
+    }
+    a:active {
+        text-decoration: none;
+        color: lightseagreen;
+    }
+    a: hover {
+        cursor: grab;
+    }
+
+</style>
+<body>
+
+<div class="wrapper">
+
+    <nav>
+        <a href="#section-01"><p id="nav-section-01">Section One</p></a>
+        <a href="#section-02"><p id="nav-section-02">Section Two</p></a>
+        <a href="#section-03"><p id="nav-section-03">Section Three</p></a>
+        <a href="#section-04"><p id="nav-section-04">Section Four</p></a>
+        <a href="#section-05"><p id="nav-section-05">Section Five</p></a>
+    </nav>
+
+    <section><p id="section-01">SECTION ONE</p></section>
+    <section><p id="section-02">SECTION TWO</p></section>
+    <section><p id="section-03">SECTION THREE</p></section>
+    <section><p id="section-04">SECTION FOUR</p></section>
+    <section><p id="section-05">SECTION FIVE</p></section>
+
+    <a href="#top"><p class="scroll">SCROLL TO TOP</p></a>
+</div><!--END OF WRAPPER -->
+</body>
+</html>
